@@ -100,3 +100,5 @@ freqtrade download-data --days 100
 *Note:* Generally, it's recommended to use static backtest data (from a defined period of time) for comparable results.
 
 Please check out the [official backtesting documentation](https://www.freqtrade.io/en/latest/backtesting/) for more information.
+
+Development documentation: [architecture and workflows](docs/ayu-develop.md) ([HTML](docs/ayu-develop.html)), [uv development](docs/development.md), and [validation evidence](docs/validation.md).

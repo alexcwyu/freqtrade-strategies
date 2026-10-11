@@ -9,13 +9,14 @@ description = "Collection of freqtrade trading strategies"
 readme = "README.md"
 license = "GPL-3.0-only"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+]
 
 [project.optional-dependencies]
 dev = [
-  "ruff>=0.11",
-  "pyright>=1.1",
-  "pytest>=9.0",
+    "ruff",
+    "pyright",
+    "pytest",
 ]
 
 [tool.hatch.build.targets.wheel]
