@@ -9,7 +9,7 @@ All strategies should work with a freqtrade version of 2022.4 or newer.
 These strategies are for educational purposes only. Do not risk money 
 which you are afraid to lose. USE THE SOFTWARE AT YOUR OWN RISK. THE 
 AUTHORS AND ALL AFFILIATES ASSUME NO RESPONSIBILITY FOR YOUR TRADING 
-RESULTS. 
+RESULTS.
 
 Always start by testing strategies with a backtesting then run the 
 trading bot in Dry-run. Do not engage money before you understand how 
@@ -24,30 +24,20 @@ bot.
 - [Free trading strategies](#free-trading-strategies)
 - [Contribute](#share-your-own-strategies-and-contribute-to-this-repo)
 - [FAQ](#faq)
-    - [What is Freqtrade?](#what-is-freqtrade)
-    - [What includes these strategies?](#what-includes-these-strategies)
-    - [How to install a strategy?](#how-to-install-a-strategy)
-    - [How to test a strategy?](#how-to-test-a-strategy)
-    - [How to create/optimize a strategy?](https://www.freqtrade.io/en/latest/strategy-customization/)
+  - [What is Freqtrade?](#what-is-freqtrade)
+  - [What includes these strategies?](#what-includes-these-strategies)
+  - [How to install a strategy?](#how-to-install-a-strategy)
+  - [How to test a strategy?](#how-to-test-a-strategy)
+  - [How to create/optimize a strategy?](https://www.freqtrade.io/en/latest/strategy-customization/)
 
 ## Free trading strategies
 
-Value below are result from backtesting from 2018-01-10 to 2018-01-30 and  
-`exit_profit_only` enabled. More detail on each strategy page.
+Strategies from this repo are free to use, though they are provided as-is and without any warranty.
+They also mostly should serve as a starting point for your own strategies, not as "ready to use" strategies.
+Feel free to use and/or update them to your likings.
 
-|  Strategy | Buy count | AVG profit % | Total profit | AVG duration | Backtest period |
-|-----------|-----------|--------------|--------------|--------------|-----------------|
-| [Strategy 001](https://github.com/freqtrade/freqtrade-strategies/blob/main/user_data/strategies/Strategy001.py) | 55 | 0.05 | 0.00012102 |  476.1 | 2018-01-10 to 2018-01-30 |
-| [Strategy 002](https://github.com/freqtrade/freqtrade-strategies/blob/main/user_data/strategies/Strategy002.py) | 9 | 3.21 | 0.00114807 |  189.4 | 2018-01-10 to 2018-01-30 |
-| [Strategy 003](https://github.com/freqtrade/freqtrade-strategies/blob/main/user_data/strategies/Strategy003.py) | 14 | 1.47 | 0.00081740 |  227.5 | 2018-01-10 to 2018-01-30 | 
-| [Strategy 004](https://github.com/freqtrade/freqtrade-strategies/blob/main/user_data/strategies/Strategy004.py) | 37 | 0.69 | 0.00102128 |  367.3 | 2018-01-10 to 2018-01-30 | 
-| [Strategy 005](https://github.com/freqtrade/freqtrade-strategies/blob/main/user_data/strategies/Strategy005.py) | 180 | 1.16 | 0.00827589 |  156.2 | 2018-01-10 to 2018-01-30 |
-
-Strategies from this repo are free to use. Feel free to update them to your likings.
-Most of them  were designed from Hyperopt calculations.
-
-Some only work in specific market conditions, while others are more "general purpose" strategies.
-It's noteworthy that depending on the exchange and Pairs used, further optimization can bring better results.
+Some may only work in specific market conditions, while others are more "general purpose" strategies.
+It's noteworthy that further optimization to the exchange and Pairs used will usually result in better outcomes.
 
 Please keep in mind, results will heavily depend on the pairs, timeframe and timerange used to backtest - so please run your own backtests that mirror your usecase, to evaluate each strategy for yourself.
 
@@ -71,11 +61,11 @@ Each Strategies includes:
 
 - [x] **Minimal ROI**: Minimal ROI optimized for the strategy.
 - [x] **Stoploss**: Optimal stoploss.
-- [x] **Buy signals**: Result from Hyperopt or based on exisiting trading strategies.
-- [x] **Sell signals**: Result from Hyperopt or based on exisiting trading strategies.
+- [x] **Buy signals**: Result from Hyperopt or based on existing trading strategies.
+- [x] **Sell signals**: Result from Hyperopt or based on existing trading strategies.
 - [x] **Indicators**: Includes the indicators required to run the strategy.
 
-Best backtest multiple strategies with the exchange and pairs you're interrested in, and finetune the strategy to the markets you're trading.
+Best backtest multiple strategies with the exchange and pairs you're interested in, and fine tune the strategy to the markets you're trading.
 
 ### How to install a strategy?
 

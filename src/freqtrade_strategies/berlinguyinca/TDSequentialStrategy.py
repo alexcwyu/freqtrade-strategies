@@ -17,7 +17,7 @@ class TDSequentialStrategy(IStrategy):
 
     Sell trigger:
         When you see 9 consecutive closes "higher" than the close 4 candles prior.
-        An ideal sell is when the the high of bars 6 and 7 in the count are exceeded by the high of bars 8 or 9.
+        An ideal sell is when the high of bars 6 and 7 in the count are exceeded by the high of bars 8 or 9.
 
     Created by @bmoulkaf
     """
@@ -142,7 +142,7 @@ class TDSequentialStrategy(IStrategy):
         Based on TA indicators, populates the sell signal for the given dataframe
         :param dataframe: DataFrame
         :param metadata: Additional information, like the currently traded pair
-        :return: DataFrame with buy columnNA / NaN values
+        :return: DataFrame with buy columnNA / nan values
         """
         dataframe["exit_long"] = 0
         dataframe.loc[((dataframe['exceed_high']) |

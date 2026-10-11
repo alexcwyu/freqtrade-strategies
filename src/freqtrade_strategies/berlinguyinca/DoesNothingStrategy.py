@@ -18,11 +18,11 @@ class DoesNothingStrategy(IStrategy):
     # adjust based on market conditions. We would recommend to keep it low for quick turn arounds
     # This attribute will be overridden if the config file contains "minimal_roi"
     minimal_roi = {
-        "0": 0.01
+        "0": 100000
     }
 
     # Optimal stoploss designed for the strategy
-    stoploss = -0.25
+    stoploss = -1
 
     # Optimal timeframe for the strategy
     timeframe = '5m'
