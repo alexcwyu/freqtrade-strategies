@@ -1,6 +1,162 @@
 {
-  "repo": "freqtrade-strategies",
-  "checks": [
+  "repository": "freqtrade-strategies",
+  "source_commit_before_documentation_commit": "4eb7ea7256fe0f6bd0a1ae1ca9b4759bf0ac9367",
+  "recorded_on": "2026-10-12",
+  "records": [
+    {
+      "command": [
+        "uv",
+        "build",
+        "--python",
+        "3.15"
+      ],
+      "exit_code": 0,
+      "seconds": 0.88,
+      "check": "build",
+      "original_log": "freqtrade-strategies-build.log",
+      "log_sha256": "855eac09dc16881a417cc0ed74fb42181af4f5a9549e5e2f99709b6b08c27ad4",
+      "outcomes": [
+        "Successfully built dist/freqtrade_strategies-0.1.0.tar.gz",
+        "Successfully built dist/freqtrade_strategies-0.1.0-py3-none-any.whl"
+      ]
+    },
+    {
+      "command": [
+        "<workspace>/freqtrade-strategies/.venv/bin/python",
+        "-m",
+        "compileall",
+        "-q",
+        "src"
+      ],
+      "exit_code": 0,
+      "seconds": 0.13,
+      "check": "compile",
+      "original_log": "freqtrade-strategies-compile.log",
+      "log_sha256": "14400f50cae7a5cfb8da67d8f9f9ae9e0e61aa53fd8e9a918048f23756b3bcba",
+      "outcomes": []
+    },
+    {
+      "command": [
+        "uv",
+        "build",
+        "--python",
+        "3.15.0"
+      ],
+      "exit_code": 0,
+      "seconds": 1.26,
+      "check": "final-build",
+      "original_log": "freqtrade-strategies-final-build.log",
+      "log_sha256": "dc43964b0c0d361b166675328d6ee33b1e0d30c62852de62a2cceac531792abd",
+      "outcomes": [
+        "Successfully built dist/freqtrade_strategies-0.1.0.tar.gz",
+        "Successfully built dist/freqtrade_strategies-0.1.0-py3-none-any.whl"
+      ]
+    },
+    {
+      "command": [
+        "uv",
+        "build",
+        "--python",
+        "3.15.0"
+      ],
+      "exit_code": 0,
+      "seconds": 0.95,
+      "check": "final-build-2",
+      "original_log": "freqtrade-strategies-final-build-2.log",
+      "log_sha256": "dc43964b0c0d361b166675328d6ee33b1e0d30c62852de62a2cceac531792abd",
+      "outcomes": [
+        "Successfully built dist/freqtrade_strategies-0.1.0.tar.gz",
+        "Successfully built dist/freqtrade_strategies-0.1.0-py3-none-any.whl"
+      ]
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "compileall",
+        "-q",
+        "src"
+      ],
+      "exit_code": 0,
+      "seconds": 0.08,
+      "check": "final-compile",
+      "original_log": "freqtrade-strategies-final-compile.log",
+      "log_sha256": "4dabb76013caec51c3f56da271eb0a58b695f2bfcf5327d2708624abfe11fb50",
+      "outcomes": []
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "compileall",
+        "-q",
+        "src"
+      ],
+      "exit_code": 0,
+      "seconds": 0.08,
+      "check": "final-compile-2",
+      "original_log": "freqtrade-strategies-final-compile-2.log",
+      "log_sha256": "4dabb76013caec51c3f56da271eb0a58b695f2bfcf5327d2708624abfe11fb50",
+      "outcomes": []
+    },
+    {
+      "command": [
+        "uv",
+        "lock",
+        "--upgrade"
+      ],
+      "exit_code": 0,
+      "seconds": 0.2,
+      "check": "final-lock",
+      "original_log": "freqtrade-strategies-final-lock.log",
+      "log_sha256": "0d8ef719024742a7746a6bccd4d914344b18f872ae05e9107cf727c390728c79",
+      "outcomes": []
+    },
+    {
+      "command": [
+        "uv",
+        "lock",
+        "--upgrade"
+      ],
+      "exit_code": 0,
+      "seconds": 0.18,
+      "check": "final-lock-2",
+      "original_log": "freqtrade-strategies-final-lock-2.log",
+      "log_sha256": "44a1f399479c87ae3f3e26b7a473a81450d0a6c8c15b7261922700552195e5af",
+      "outcomes": []
+    },
+    {
+      "command": [
+        "uv",
+        "sync",
+        "--all-extras",
+        "--frozen",
+        "--python",
+        "3.15.0"
+      ],
+      "exit_code": 0,
+      "seconds": 0.03,
+      "check": "final-sync",
+      "original_log": "freqtrade-strategies-final-sync.log",
+      "log_sha256": "05eafd5c219154b4db8a9a13a3f37c9ae432bcd6a6b0b89f88802bcb643f0201",
+      "outcomes": []
+    },
+    {
+      "command": [
+        "uv",
+        "sync",
+        "--all-extras",
+        "--frozen",
+        "--python",
+        "3.15.0"
+      ],
+      "exit_code": 0,
+      "seconds": 0.02,
+      "check": "final-sync-2",
+      "original_log": "freqtrade-strategies-final-sync-2.log",
+      "log_sha256": "05eafd5c219154b4db8a9a13a3f37c9ae432bcd6a6b0b89f88802bcb643f0201",
+      "outcomes": []
+    },
     {
       "command": [
         "uv",
@@ -9,10 +165,12 @@
         "--python",
         "3.15"
       ],
-      "label": "lock-3.15",
       "exit_code": 0,
       "seconds": 0.24,
-      "log": "freqtrade-strategies-lock-3.15.log"
+      "check": "lock-3.15",
+      "original_log": "freqtrade-strategies-lock-3.15.log",
+      "log_sha256": "31a7542f5bdffdb87326fc82a2f40193b2e3d8d4891a9e0a41970a56b2efd21c",
+      "outcomes": []
     },
     {
       "command": [
@@ -22,39 +180,56 @@
         "--python",
         "3.15"
       ],
-      "label": "sync-3.15",
       "exit_code": 0,
       "seconds": 0.57,
-      "log": "freqtrade-strategies-sync-3.15.log"
+      "check": "sync-3.15",
+      "original_log": "freqtrade-strategies-sync-3.15.log",
+      "log_sha256": "9d9fb9bdf9362f10f4a6c36ce178f798b447f39432e6fb4f38ce23d7fa6775b2",
+      "outcomes": []
     },
     {
       "command": [
-        "uv",
-        "build",
-        "--python",
-        "3.15"
-      ],
-      "label": "build",
-      "exit_code": 0,
-      "seconds": 0.88,
-      "log": "freqtrade-strategies-build.log"
-    },
-    {
-      "command": [
-        "/Users/alex/workspaces/trading/freqtrade-strategies/.venv/bin/python",
+        "<workspace>/freqtrade-strategies/.venv/bin/python",
         "-m",
-        "compileall",
-        "-q",
-        "src"
+        "pytest",
+        "tests"
       ],
-      "label": "compile",
-      "exit_code": 0,
-      "seconds": 0.13,
-      "log": "freqtrade-strategies-compile.log"
+      "exit_code": 5,
+      "seconds": 0.56,
+      "check": "tests",
+      "original_log": "freqtrade-strategies-tests.log",
+      "log_sha256": "b6f360291ae07fe94f4d171dabf9142301bdd8d6afd1acd375425e76cecdbea3",
+      "outcomes": []
+    }
+  ],
+  "summary": {
+    "repo": "freqtrade-strategies",
+    "started": "2026-10-12T00:13:48+0800",
+    "python": "3.15.0",
+    "head": "9f7d6758055b20be5e1cdec8e279a8b559ff02fb",
+    "branch": "feature/ayu_develop",
+    "runtime_inventory": {
+      "executable": "<workspace>/freqtrade-strategies/.venv/bin/python",
+      "packages": {
+        "Pygments": "2.21.0",
+        "freqtrade-strategies": "0.1.0",
+        "iniconfig": "2.3.1",
+        "nodeenv": "1.11.0",
+        "packaging": "26.3",
+        "pluggy": "1.6.0",
+        "pyright": "1.1.414",
+        "pytest": "9.1.1",
+        "ruff": "0.17.0",
+        "typing_extensions": "4.16.0"
+      },
+      "python": "3.15.0 (main, Oct  9 2026, 15:11:47) [Clang 22.1.3 ]"
     },
-    {
+    "validation_updated": "2026-10-12T01:32:45.207790+08:00",
+    "python_decision": "Python 3.15.0 installs the archive environment. Strategy execution additionally requires a separately installed Freqtrade host.",
+    "outcome_notes": "The archive builds and all strategy source compiles. pytest exits 5 because this repository has no existing test cases; no cases were introduced.",
+    "selected_test": {
       "command": [
-        "/Users/alex/workspaces/trading/freqtrade-strategies/.venv/bin/python",
+        "<workspace>/freqtrade-strategies/.venv/bin/python",
         "-m",
         "pytest",
         "tests"
@@ -62,198 +237,65 @@
       "label": "tests",
       "exit_code": 5,
       "seconds": 0.56,
-      "log": "freqtrade-strategies-tests.log"
+      "log": "<workspace>/docs/maintenance-2026-10-12/freqtrade-strategies-tests.log"
     },
-    {
-      "command": [
-        "uv",
-        "lock",
-        "--upgrade"
-      ],
-      "label": "final-lock",
-      "exit_code": 0,
-      "seconds": 0.2,
-      "log": "freqtrade-strategies-final-lock.log"
+    "test_summary": "no tests ran in 0.01s",
+    "status": "no_existing_tests",
+    "final_checks": {
+      "lock": {
+        "command": [
+          "uv",
+          "lock",
+          "--upgrade"
+        ],
+        "label": "final-lock-2",
+        "exit_code": 0,
+        "seconds": 0.18,
+        "log": "<workspace>/docs/maintenance-2026-10-12/freqtrade-strategies-final-lock-2.log"
+      },
+      "sync": {
+        "command": [
+          "uv",
+          "sync",
+          "--all-extras",
+          "--frozen",
+          "--python",
+          "3.15.0"
+        ],
+        "label": "final-sync-2",
+        "exit_code": 0,
+        "seconds": 0.02,
+        "log": "<workspace>/docs/maintenance-2026-10-12/freqtrade-strategies-final-sync-2.log"
+      },
+      "build": {
+        "command": [
+          "uv",
+          "build",
+          "--python",
+          "3.15.0"
+        ],
+        "label": "final-build-2",
+        "exit_code": 0,
+        "seconds": 0.95,
+        "log": "<workspace>/docs/maintenance-2026-10-12/freqtrade-strategies-final-build-2.log"
+      },
+      "compile": {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "compileall",
+          "-q",
+          "src"
+        ],
+        "label": "final-compile-2",
+        "exit_code": 0,
+        "seconds": 0.08,
+        "log": "<workspace>/docs/maintenance-2026-10-12/freqtrade-strategies-final-compile-2.log"
+      }
     },
-    {
-      "command": [
-        "uv",
-        "sync",
-        "--all-extras",
-        "--frozen",
-        "--python",
-        "3.15.0"
-      ],
-      "label": "final-sync",
-      "exit_code": 0,
-      "seconds": 0.03,
-      "log": "freqtrade-strategies-final-sync.log"
-    },
-    {
-      "command": [
-        "uv",
-        "build",
-        "--python",
-        "3.15.0"
-      ],
-      "label": "final-build",
-      "exit_code": 0,
-      "seconds": 1.26,
-      "log": "freqtrade-strategies-final-build.log"
-    },
-    {
-      "command": [
-        ".venv/bin/python",
-        "-m",
-        "compileall",
-        "-q",
-        "src"
-      ],
-      "label": "final-compile",
-      "exit_code": 0,
-      "seconds": 0.08,
-      "log": "freqtrade-strategies-final-compile.log"
-    },
-    {
-      "command": [
-        "uv",
-        "lock",
-        "--upgrade"
-      ],
-      "label": "final-lock-2",
-      "exit_code": 0,
-      "seconds": 0.18,
-      "log": "freqtrade-strategies-final-lock-2.log"
-    },
-    {
-      "command": [
-        "uv",
-        "sync",
-        "--all-extras",
-        "--frozen",
-        "--python",
-        "3.15.0"
-      ],
-      "label": "final-sync-2",
-      "exit_code": 0,
-      "seconds": 0.02,
-      "log": "freqtrade-strategies-final-sync-2.log"
-    },
-    {
-      "command": [
-        "uv",
-        "build",
-        "--python",
-        "3.15.0"
-      ],
-      "label": "final-build-2",
-      "exit_code": 0,
-      "seconds": 0.95,
-      "log": "freqtrade-strategies-final-build-2.log"
-    },
-    {
-      "command": [
-        ".venv/bin/python",
-        "-m",
-        "compileall",
-        "-q",
-        "src"
-      ],
-      "label": "final-compile-2",
-      "exit_code": 0,
-      "seconds": 0.08,
-      "log": "freqtrade-strategies-final-compile-2.log"
-    }
-  ],
-  "started": "2026-10-12T00:13:48+0800",
-  "python": "3.15.0",
-  "head": "9f7d6758055b20be5e1cdec8e279a8b559ff02fb",
-  "branch": "feature/ayu_develop",
-  "runtime_inventory": {
-    "executable": "/Users/alex/workspaces/trading/freqtrade-strategies/.venv/bin/python",
-    "packages": {
-      "Pygments": "2.21.0",
-      "freqtrade-strategies": "0.1.0",
-      "iniconfig": "2.3.1",
-      "nodeenv": "1.11.0",
-      "packaging": "26.3",
-      "pluggy": "1.6.0",
-      "pyright": "1.1.414",
-      "pytest": "9.1.1",
-      "ruff": "0.17.0",
-      "typing_extensions": "4.16.0"
-    },
-    "python": "3.15.0 (main, Oct  9 2026, 15:11:47) [Clang 22.1.3 ]"
+    "default_merged": true,
+    "upstream_default": "upstream/main",
+    "maintenance_commit": "4eb7ea7256fe0f6bd0a1ae1ca9b4759bf0ac9367"
   },
-  "validation_updated": "2026-10-12T01:32:45.207790+08:00",
-  "python_decision": "Python 3.15.0 installs the archive environment. Strategy execution additionally requires a separately installed Freqtrade host.",
-  "outcome_notes": "The archive builds and all strategy source compiles. pytest exits 5 because this repository has no existing test cases; no cases were introduced.",
-  "selected_test": {
-    "command": [
-      "/Users/alex/workspaces/trading/freqtrade-strategies/.venv/bin/python",
-      "-m",
-      "pytest",
-      "tests"
-    ],
-    "label": "tests",
-    "exit_code": 5,
-    "seconds": 0.56,
-    "log": "freqtrade-strategies-tests.log"
-  },
-  "test_summary": "no tests ran in 0.01s",
-  "status": "no_existing_tests",
-  "final_checks": {
-    "lock": {
-      "command": [
-        "uv",
-        "lock",
-        "--upgrade"
-      ],
-      "label": "final-lock-2",
-      "exit_code": 0,
-      "seconds": 0.18,
-      "log": "freqtrade-strategies-final-lock-2.log"
-    },
-    "sync": {
-      "command": [
-        "uv",
-        "sync",
-        "--all-extras",
-        "--frozen",
-        "--python",
-        "3.15.0"
-      ],
-      "label": "final-sync-2",
-      "exit_code": 0,
-      "seconds": 0.02,
-      "log": "freqtrade-strategies-final-sync-2.log"
-    },
-    "build": {
-      "command": [
-        "uv",
-        "build",
-        "--python",
-        "3.15.0"
-      ],
-      "label": "final-build-2",
-      "exit_code": 0,
-      "seconds": 0.95,
-      "log": "freqtrade-strategies-final-build-2.log"
-    },
-    "compile": {
-      "command": [
-        ".venv/bin/python",
-        "-m",
-        "compileall",
-        "-q",
-        "src"
-      ],
-      "label": "final-compile-2",
-      "exit_code": 0,
-      "seconds": 0.08,
-      "log": "freqtrade-strategies-final-compile-2.log"
-    }
-  },
-  "default_merged": true,
-  "upstream_default": "upstream/main"
+  "note": "Full raw logs are retained in the workspace maintenance evidence, not distributed here. Hashes identify those original logs. A successful build or selected test subset does not imply a full test-suite pass. Commands containing <workspace> describe the original execution environment."
 }
