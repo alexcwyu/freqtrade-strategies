@@ -1,5 +1,11 @@
 # freqtrade-strategies maintenance validation
 
+<!-- current-documentation-provenance -->
+Documentation reviewed: 2026-10-13 / Git source base: `b5b33f2b2d793faa382d8c346db8a7bba9cca3b6` / [Current architecture and feature guide](ayu-develop.md).
+Historical execution commands/results below retain their original dates and scope; this metadata update is not a new application test run.
+<!-- /current-documentation-provenance -->
+
+
 Recorded 2026-10-12T01:32:45.207790+08:00. Branch `feature/ayu_develop`; upstream default `upstream/main` is merged: **true**. Branch/tag synchronization records are retained in the workspace maintenance evidence. Feature branch publication is coordinated separately.
 
 Runtime: **CPython 3.15.0**, uv **0.13.0**, build backend `hatchling.build`. Python 3.15.0 installs the archive environment. Strategy execution additionally requires a separately installed Freqtrade host.
